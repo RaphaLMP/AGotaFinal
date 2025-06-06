@@ -28,7 +28,13 @@
     }
 
     .section {
-      margin-bottom: 60px;
+      margin-bottom: 80px;
+    }
+
+    .section-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
     .section-img img {
@@ -43,12 +49,14 @@
     .section h2 {
       color: #4facfe;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .section p {
       font-size: 1.1rem;
       line-height: 1.6;
       color: #d1d5db;
+      text-align: justify;
     }
 
     #btnTopo {
@@ -77,6 +85,256 @@
     .page-header p {
       color: rgba(255, 255, 255, 0.9);
       font-size: 1.2rem;
+    }
+
+    .hero-section {
+      padding: 60px 0;
+      margin-bottom: 60px;
+    }
+
+    .hero-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 250px;
+    }
+
+    .hero-text p {
+      font-size: 2.5rem;
+      font-weight: bold;
+      line-height: 1.2;
+      margin: 0;
+      color: #f8f9fa;
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .emergency-guide {
+      background: #334155;
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 60px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .emergency-guide .main-title {
+      text-align: center;
+      color: #f8f9fa;
+      margin-bottom: 40px;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+
+    .emergency-guide .main-title .emoji {
+      font-size: 3rem;
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .emergency-guide .accordion {
+      --bs-accordion-bg: transparent;
+      --bs-accordion-border-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .emergency-guide .accordion-item {
+      background: #334155;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px !important;
+      margin-bottom: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      border-left: 5px solid #28a745 !important;
+    }
+
+    .emergency-guide .accordion-header {
+      margin-bottom: 0;
+    }
+
+    .emergency-guide .accordion-button {
+      background: #334155;
+      color: #f8f9fa;
+      border: none;
+      padding: 20px 25px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      box-shadow: none;
+      border-radius: 15px !important;
+    }
+
+    .emergency-guide .accordion-button:not(.collapsed) {
+      background: #28a745;
+      color: white;
+      box-shadow: none;
+    }
+
+    .emergency-guide .accordion-button:focus {
+      box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+      border-color: #28a745;
+    }
+
+    .emergency-guide .accordion-button::after {
+      filter: brightness(0) invert(1);
+    }
+
+    .emergency-guide .accordion-button:not(.collapsed)::after {
+      filter: brightness(0) invert(1);
+    }
+
+    .emergency-guide .accordion-body {
+      background: #334155;
+      color: #f8f9fa;
+      padding: 0;
+    }
+
+    .emergency-guide .list-group {
+      background: transparent;
+    }
+
+    .emergency-guide .list-group-item {
+      background: rgba(59, 130, 246, 0.1);
+      color: #f8f9fa;
+      border: none;
+      border-left: 3px solid #20c997;
+      margin: 15px 20px;
+      padding: 20px;
+      border-radius: 10px;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+      padding-left: 35px;
+    }
+
+    .emergency-guide .list-group-item:hover {
+      transform: translateX(8px);
+      background: rgba(59, 130, 246, 0.2);
+      box-shadow: 0 5px 15px rgba(32, 201, 151, 0.2);
+    }
+
+    .emergency-guide .list-group-item::before {
+      content: "•";
+      color: #20c997;
+      font-size: 1.5rem;
+      position: absolute;
+      left: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .emergency-guide .phase-icon {
+      font-size: 1.5rem;
+      margin-right: 15px;
+    }
+
+    .emergency-guide .collapse {
+      border-radius: 0 0 15px 15px;
+    }
+
+    .emergency-guide .accordion-item:last-child .accordion-body {
+      border-radius: 0 0 15px 15px;
+    }
+
+    .risk-section {
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 40px;
+      margin-bottom: 40px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .risk-section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .risk-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .risk-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .risk-image {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) {
+      .hero-text p {
+        font-size: 3rem;
+        text-align: left;
+      }
+
+      .hero-text {
+        align-items: flex-start;
+        text-align: left;
+      }
+
+      .section h2 {
+        text-align: left;
+      }
+
+      .section p {
+        text-align: left;
+      }
+
+      .risk-content {
+        flex-direction: row;
+        gap: 40px;
+      }
+
+      .risk-content.reverse {
+        flex-direction: row-reverse;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .emergency-guide {
+        padding: 25px;
+        border-radius: 15px;
+      }
+
+      .emergency-guide .main-title {
+        font-size: 2rem;
+      }
+
+      .emergency-guide .main-title .emoji {
+        font-size: 2.5rem;
+      }
+
+      .hero-text p {
+        font-size: 2rem;
+      }
+
+      .hero-section {
+        padding: 40px 0;
+      }
+
+      .risk-section {
+        padding: 25px;
+      }
     }
   </style>
 </head>
@@ -114,66 +372,174 @@
   <!-- Conteúdo Principal -->
   <main>
     <div class="container">
-
-      <!-- Seção: Beira de Rio -->
-      <div class="row align-items-center section">
-        <div class="col-md-5">
-          <h2><i class="bi bi-water me-2"></i>Áreas próximas a rios, córregos e lagos</h2>
-          <div class="section-img mt-3">
-            <img src="Imagens\corrego.jpeg" alt="Áreas próximas a rios, córregos e lagos">
+      
+      <!-- Seção Hero -->
+      <div class="hero-section">
+        <div class="row align-items-center">
+          <div class="col-md-6 order-2 order-md-1">
+            <div class="hero-text">
+              <p>Tem gente que só aprende</p>
+              <p>quando a água bate.</p>
+              <p>E você, vai esperar?</p>
+            </div>
+          </div>
+          <div class="col-md-6 order-1 order-md-2">
+            <div class="hero-image">
+              <img src="Imagens/homem-duvida.jpg" alt="Pessoa refletindo sobre prevenção">
+            </div>
           </div>
         </div>
-        <div class="col-md-7">
-          <p class="mt-4 mt-md-0">
-            Áreas próximas a rios têm risco de enchentes, principalmente em períodos de chuva intensa.
-            É importante evitar construir muito perto da margem, manter a vegetação nativa para segurar o solo
-            e ficar atento ao aumento do nível da água.
-          </p>
-          <div class="alert alert-warning mt-3">
-            <i class="bi bi-exclamation-triangle-fill me-2"></i>
-            <strong>Atenção:</strong> Mantenha-se informado sobre os níveis dos rios através de órgãos oficiais.
+      </div>
+
+      <!-- Guia de Emergência -->
+      <div class="emergency-guide">
+        <h1 class="main-title">
+          <span class="emoji">🚨</span>
+          Guia de Emergência para Alagamentos
+        </h1>
+
+        <div class="accordion" id="accordionEmergency">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingBefore">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseBefore" aria-expanded="false" aria-controls="collapseBefore">
+                <span class="phase-icon">⏳</span> ANTES DO ALAGAMENTO
+              </button>
+            </h2>
+            <div id="collapseBefore" class="accordion-collapse collapse" aria-labelledby="headingBefore"
+              data-bs-parent="#accordionEmergency">
+              <div class="accordion-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Acompanhe previsões do tempo e alertas da Defesa Civil</li>
+                  <li class="list-group-item">Conheça as rotas de fuga e locais seguros da sua região</li>
+                  <li class="list-group-item">Deixe o kit de emergência sempre pronto e visível</li>
+                  <li class="list-group-item">Evite guardar documentos e eletrônicos no chão</li>
+                  <li class="list-group-item">Se morar em área de risco, combine um ponto de encontro com a família</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingDuring">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseDuring" aria-expanded="false" aria-controls="collapseDuring">
+                <span class="phase-icon">🌊</span> DURANTE O ALAGAMENTO
+              </button>
+            </h2>
+            <div id="collapseDuring" class="accordion-collapse collapse" aria-labelledby="headingDuring"
+              data-bs-parent="#accordionEmergency">
+              <div class="accordion-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Não ande em áreas alagadas. A água pode esconder buracos, correntezas ou fios elétricos</li>
+                  <li class="list-group-item">Desligue energia e gás da casa ao primeiro sinal de inundação</li>
+                  <li class="list-group-item">Não tente atravessar áreas alagadas com carro ou moto</li>
+                  <li class="list-group-item">Busque abrigo em lugares altos e seguros</li>
+                  <li class="list-group-item">Use o apito ou acene por ajuda se estiver isolado</li>
+                  <li class="list-group-item">Evite contato com a água: ela pode estar contaminada</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingAfter">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseAfter" aria-expanded="false" aria-controls="collapseAfter">
+                <span class="phase-icon">✅</span> APÓS O ALAGAMENTO
+              </button>
+            </h2>
+            <div id="collapseAfter" class="accordion-collapse collapse" aria-labelledby="headingAfter"
+              data-bs-parent="#accordionEmergency">
+              <div class="accordion-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Só retorne à casa quando as autoridades liberarem</li>
+                  <li class="list-group-item">Não consuma água ou alimentos que tiveram contato com a enchente</li>
+                  <li class="list-group-item">Use luvas e botas para a limpeza do local</li>
+                  <li class="list-group-item">Verifique rachaduras e danos na estrutura da casa</li>
+                  <li class="list-group-item">Registre prejuízos com fotos, se possível, para solicitar ajuda</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Seção: Beira de Rio -->
+      <div class="risk-section">
+        <h2><i class="bi bi-water me-2"></i>Áreas próximas a rios, córregos e lagos</h2>
+        <div class="risk-content">
+          <div class="risk-image">
+            <img src="Imagens/corrego.jpeg" alt="Áreas próximas a rios, córregos e lagos" 
+                 style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+          </div>
+          <div class="risk-text">
+            <p>
+              Áreas próximas a rios têm risco de enchentes, principalmente em períodos de chuva intensa.
+              É importante evitar construir muito perto da margem, manter a vegetação nativa para segurar o solo
+              e ficar atento ao aumento do nível da água.
+            </p>
+            <div class="alert alert-warning mt-3">
+              <i class="bi bi-exclamation-triangle-fill me-2"></i>
+              <strong>Atenção:</strong> Mantenha-se informado sobre os níveis dos rios através de órgãos oficiais.
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Seção: Zona de Alagamento -->
-      <div class="row align-items-center flex-md-row-reverse section">
-        <div class="col-md-5">
-          <h2 class="text-md-end"><i class="bi bi-buildings me-2"></i>Áreas urbanas com drenagem insuficiente</h2>
-          <div class="section-img mt-3">
-            <img src="Imagens\drenagem.jpg" alt="Áreas urbanas com drenagem insuficiente">
+      <div class="risk-section">
+        <h2><i class="bi bi-buildings me-2"></i>Áreas urbanas com drenagem insuficiente</h2>
+        <div class="risk-content reverse">
+          <div class="risk-image">
+            <img src="Imagens/drenagem.jpg" alt="Áreas urbanas com drenagem insuficiente"
+                 style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
           </div>
-        </div>
-        <div class="col-md-7">
-          <p class="mt-4 mt-md-0">
-            Zonas de alagamento são perigosas, principalmente durante chuvas fortes.
-            A falta de drenagem e construções irregulares pioram o problema.
-            Em caso de emergência, fique atento aos alertas e evite essas áreas.
-          </p>
-          <div class="alert alert-danger mt-3">
-            <i class="bi bi-exclamation-octagon-fill me-2"></i>
-            <strong>Importante:</strong> Nunca tente atravessar áreas alagadas a pé ou de carro.
+          <div class="risk-text">
+            <p>
+              Zonas de alagamento são perigosas, principalmente durante chuvas fortes.
+              A falta de drenagem e construções irregulares pioram o problema.
+              Em caso de emergência, fique atento aos alertas e evite essas áreas.
+            </p>
+            <div class="alert alert-danger mt-3">
+              <i class="bi bi-exclamation-octagon-fill me-2"></i>
+              <strong>Importante:</strong> Nunca tente atravessar áreas alagadas a pé ou de carro.
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Seção: Encostas -->
-      <div class="row align-items-center section">
-        <div class="col-md-5">
-          <h2><i class="bi bi-triangle-fill me-2"></i>Encostas e áreas de morro</h2>
-          <div class="section-img mt-3">
-            <img src="Imagens\encosta.jpg" alt="Encostas e áreas de morro">
+      <div class="risk-section">
+        <h2><i class="bi bi-triangle-fill me-2"></i>Encostas e áreas de morro</h2>
+        <div class="risk-content">
+          <div class="risk-image">
+            <img src="Imagens/encosta.jpg" alt="Encostas e áreas de morro"
+                 style="width: 100%; max-width: 400px; height: 250px; object-fit: cover; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+          </div>
+          <div class="risk-text">
+            <p>
+              Encostas podem ter deslizamentos, principalmente quando chove forte.
+              É importante não desmatar, construir muros de contenção e seguir as regras de construção.
+              Evite fazer construções irregulares nessas áreas.
+            </p>
+            <div class="alert alert-info mt-3">
+              <i class="bi bi-info-circle-fill me-2"></i>
+              <strong>Dica:</strong> Observe sinais como rachaduras no solo, inclinação de postes ou árvores.
+            </div>
           </div>
         </div>
-        <div class="col-md-7">
-          <p class="mt-4 mt-md-0">
-            Encostas podem ter deslizamentos, principalmente quando chove forte.
-            É importante não desmatar, construir muros de contenção e seguir as regras de construção.
-            Evite fazer construções irregulares nessas áreas.
-          </p>
-          <div class="alert alert-info mt-3">
-            <i class="bi bi-info-circle-fill me-2"></i>
-            <strong>Dica:</strong> Observe sinais como rachaduras no solo, inclinação de postes ou árvores.
+      </div>
+
+      <!-- Seção de Vídeo -->
+      <div class="risk-section">
+        <h2><i class="bi bi-play-circle-fill me-2"></i>Vídeo Educativo sobre Prevenção</h2>
+        <div class="d-flex justify-content-center">
+          <div class="w-100" style="max-width: 800px;">
+            <iframe class="w-100" height="400px" src="https://www.youtube.com/embed/3WL1OrbJAlc" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen style="border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);">
+            </iframe>
           </div>
         </div>
       </div>
