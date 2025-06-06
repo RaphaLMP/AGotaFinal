@@ -1,60 +1,171 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <title>Segurança Climática - Início</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-   <style>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  
+  <style>
     html, body {
       height: 100%;
     }
+
     body {
       display: flex;
       flex-direction: column;
     }
+
     main {
       flex: 1;
     }
+
+    .hero {
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 10px;
+    }
+
+    #btnTopo {
+      display: none;
+      position: fixed;
+      bottom: 40px;
+      right: 30px;
+      z-index: 99;
+      font-size: 20px;
+      padding: 10px 14px;
+    }
+
+    .card-info {
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+
+    .card-info:hover {
+      transform: translateY(-5px);
+    }
+
+    .section-preview {
+      padding: 40px 0;
+    }
   </style>
-  
+
 </head>
+
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="index.html">Segurança Climática</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
-          <li class="nav-item"><a class="nav-link" href="prevencao.html">Dicas de Prevenção</a></li>
-          <li class="nav-item"><a class="nav-link" href="kit.html">Kit de Emergência</a></li>
-          <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
-        </ul>
+  <!-- Header / Navbar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+      <div class="container">
+        <a class="navbar-brand fw-bold text-primary" href="index.html">
+          <i class="bi bi-shield-fill-exclamation me-1"></i>Segurança Climática
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+            <li class="nav-item"><a class="nav-link" href="prevencao.html">Dicas de Prevenção</a></li>
+            <li class="nav-item"><a class="nav-link" href="kit.html">Kit de Emergência</a></li>
+            <li class="nav-item"><a class="nav-link" href="equipe.html">Equipe</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
-  <!-- Conteúdo -->
-  <div class="container my-5">
-    <h1 class="mb-4 text-center">Como se Proteger de Enchentes</h1>
-    <p>Este site tem como objetivo conscientizar e informar a população sobre medidas preventivas e de segurança em situações de enchentes, chuvas fortes e desastres naturais.</p>
-    <p>Explore nossas seções para saber como montar um kit de emergência, entender os riscos e proteger sua família.</p>
-  </div>
+  <!-- Conteúdo Principal -->
+  <main class="container my-5">
+    <section class="hero shadow-sm mb-5">
+      <h1 class="mb-4 display-5 fw-bold">Como se Proteger de Enchentes</h1>
+      <p class="lead">Este site tem como objetivo conscientizar e informar a população sobre medidas preventivas e de
+        segurança em situações de enchentes, chuvas fortes e desastres naturais.</p>
+      <p class="mb-0">Explore nossas seções para saber como montar um kit de emergência, entender os riscos e proteger
+        sua família.</p>
+    </section>
 
-  <!-- Footer -->
+    <!-- Preview das Seções -->
+    <section class="section-preview">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card card-info shadow-sm h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-exclamation-triangle-fill text-warning fs-1 mb-3"></i>
+              <h5 class="card-title">Dicas de Prevenção</h5>
+              <p class="card-text text-muted">Aprenda sobre áreas de risco e como se preparar para enchentes e alagamentos.</p>
+              <a href="prevencao.html" class="btn btn-primary">Saiba Mais</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-info shadow-sm h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-briefcase-fill text-success fs-1 mb-3"></i>
+              <h5 class="card-title">Kit de Emergência</h5>
+              <p class="card-text text-muted">Descubra quais itens são essenciais para ter em casa em caso de emergência.</p>
+              <a href="kit.html" class="btn btn-primary">Ver Lista</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-info shadow-sm h-100">
+            <div class="card-body text-center">
+              <i class="bi bi-people-fill text-info fs-1 mb-3"></i>
+              <h5 class="card-title">Nossa Equipe</h5>
+              <p class="card-text text-muted">Conheça os desenvolvedores por trás deste projeto educativo.</p>
+              <a href="equipe.html" class="btn btn-primary">Conhecer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botão Voltar ao Topo -->
+  <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo" class="btn btn-primary rounded-circle shadow">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Rodapé -->
   <footer class="bg-light text-center text-muted py-4 border-top mt-auto">
     <div class="container">
       <p class="mb-1">&copy; 2025 Proteja-se das Enchentes</p>
-      <small>Site educativo com dicas de segurança e prevenção contra desastres naturais.</small>
+      <small class="d-block">Site educativo com dicas de segurança e prevenção contra desastres naturais.</small>
     </div>
   </footer>
 
+  <!-- Scripts Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Mostrar o botão quando rolar para baixo
+    window.onscroll = function () {
+      mostrarBotaoTopo();
+    };
+
+    function mostrarBotaoTopo() {
+      const btn = document.getElementById("btnTopo");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    }
+
+    // Rolagem suave até o topo
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
 </body>
+
 </html>

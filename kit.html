@@ -2,30 +2,134 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Kit de Emergência</title>
+  <title>Kit de Emergência - Segurança Climática</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <style>
-    html, body {
-      height: 100%;
-    }
-    body {
-      display: flex;
-      flex-direction: column;
-    }
-    main {
-      flex: 1;
-    }
-  </style>
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   
+  <style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a2e;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  #btnTopo {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    font-size: 20px;
+    padding: 10px 14px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .page-header {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .page-header h1 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .page-header p {
+    color: rgba(255,255,255,0.9);
+    font-size: 1.2rem;
+  }
+
+  .kit-category {
+    background: #334155;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    border-left: 5px solid #28a745;
+    color: #f8f9fa; /* Cor clara para o conteúdo */
+  }
+
+  .kit-category h3 {
+    color: #28a745;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .kit-category h3 i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+  }
+
+  .kit-item {
+    background: rgba(59, 130, 246, 0.1);
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border-left: 3px solid #20c997;
+    transition: transform 0.2s ease;
+  }
+
+  .kit-item:hover {
+    transform: translateX(5px);
+  }
+
+  .kit-item h5 {
+    color: #e2e8f0; /* cor clara */
+    margin-bottom: 8px;
+  }
+
+  .kit-item p {
+    color: #cbd5e1; /* cor clara */
+    margin-bottom: 0;
+    font-size: 0.9rem;
+  }
+
+  .important-note {
+    background: linear-gradient(135deg, #ffeaa7, #fdcb6e);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 40px 0;
+    text-align: center;
+    color: #2d3436;
+  }
+
+  .important-note h4 {
+    color: #d35400;
+    margin-bottom: 15px;
+  }
+</style>
+
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
     <div class="container">
-      <a class="navbar-brand fw-bold text-primary" href="index.html">Segurança Climática</a>
+      <a class="navbar-brand fw-bold text-primary" href="index.html">
+        <i class="bi bi-shield-fill-exclamation me-1"></i>Segurança Climática
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,28 +144,167 @@
     </div>
   </nav>
 
-  <!-- Conteúdo -->
-  <div class="container my-5">
-    <h2 class="mb-4">Itens Essenciais do Kit de Emergência</h2>
-    <ul>
-      <li>Água potável (mínimo 2 litros por pessoa por dia)</li>
-      <li>Alimentos não perecíveis</li>
-      <li>Lanterna e pilhas extras</li>
-      <li>Rádio de pilha</li>
-      <li>Medicamentos de uso contínuo</li>
-      <li>Documentos importantes em saco plástico</li>
-      <li>Máscaras e álcool em gel</li>
-    </ul>
+  <!-- Header da Página -->
+  <div class="page-header">
+    <div class="container">
+      <h1 class="display-4"><i class="bi bi-briefcase-fill me-3"></i>Kit de Emergência</h1>
+      <p>Tenha sempre em casa os itens essenciais para situações de emergência</p>
+    </div>
   </div>
+
+  <!-- Conteúdo -->
+  <main class="container my-5">
+    
+    <!-- Nota Importante -->
+    <div class="important-note">
+      <h4><i class="bi bi-exclamation-triangle-fill me-2"></i>Importante!</h4>
+      <p class="mb-0">Mantenha seu kit de emergência em local de fácil acesso e verifique regularmente as validades dos itens. Cada pessoa da família deve saber onde está localizado o kit.</p>
+    </div>
+
+    <!-- Categoria: Água e Alimentação -->
+    <div class="kit-category">
+      <h3><i class="bi bi-droplet-fill"></i>Água e Alimentação</h3>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-cup-fill me-2 text-primary"></i>Água Potável</h5>
+        <p>Mínimo de 2 litros por pessoa por dia, para pelo menos 3 dias. Use recipientes limpos e lacrados.</p>
+      </div>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-box-seam me-2 text-primary"></i>Alimentos Não Perecíveis</h5>
+        <p>Enlatados, biscoitos, barras de cereal, frutas secas. Priorize alimentos que não precisam de cozimento.</p>
+      </div>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-tools me-2 text-primary"></i>Utensílios Básicos</h5>
+        <p>Abridor de latas, pratos e copos descartáveis, talheres plásticos.</p>
+      </div>
+    </div>
+
+    <!-- Categoria: Iluminação e Comunicação -->
+    <div class="kit-category">
+      <h3><i class="bi bi-lightbulb-fill"></i>Iluminação e Comunicação</h3>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-flashlight me-2 text-warning"></i>Lanterna</h5>
+        <p>Prefira lanternas LED, que duram mais. Tenha pelo menos uma por pessoa.</p>
+      </div>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-battery-full me-2 text-warning"></i>Pilhas Extras</h5>
+        <p>Pilhas AA e AAA em quantidade suficiente para todos os equipamentos.</p>
+      </div>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-radio me-2 text-warning"></i>Rádio de Pilha</h5>
+        <p>Para receber informações oficiais durante emergências. Prefira modelos com manivela.</p>
+      </div>
+    </div>
+
+    <!-- Categoria: Saúde e Higiene -->
+    <div class="kit-category">
+      <h3><i class="bi bi-heart-pulse-fill"></i>Saúde e Higiene</h3>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-capsule me-2 text-danger"></i>Medicamentos</h5>
+        <p>Medicamentos de uso contínuo para pelo menos 7 dias, além de analgésicos e antialérgicos básicos.</p>
+      </div>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-bandaid me-2 text-danger"></i>Kit de Primeiros Socorros</h5>
+        <p>Bandagens, gaze, esparadrapo, antisséptico, termômetro, luvas descartáveis.</p>
+      </div>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-shield-check me-2 text-danger"></i>Itens de Proteção</h5>
+        <p>Máscaras descartáveis, álcool em gel, sabonete líquido.</p>
+      </div>
+    </div>
+
+    <!-- Categoria: Documentos e Dinheiro -->
+    <div class="kit-category">
+      <h3><i class="bi bi-file-earmark-text-fill"></i>Documentos e Dinheiro</h3>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-card-text me-2 text-info"></i>Documentos Importantes</h5>
+        <p>Cópias de RG, CPF, certidões, carteira de vacinação em saco plástico impermeável.</p>
+      </div>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-cash me-2 text-info"></i>Dinheiro em Espécie</h5>
+        <p>Quantia suficiente para necessidades básicas, em notas pequenas.</p>
+      </div>
+    </div>
+
+    <!-- Categoria: Outros Itens -->
+    <div class="kit-category">
+      <h3><i class="bi bi-tools"></i>Outros Itens Essenciais</h3>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-telephone me-2 text-secondary"></i>Carregador Portátil</h5>
+        <p>Power bank carregado para manter o celular funcionando.</p>
+      </div>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-bag me-2 text-secondary"></i>Roupas Extras</h5>
+        <p>Uma muda de roupa por pessoa, incluindo roupas íntimas e calçados.</p>
+      </div>
+      
+      <div class="kit-item">
+        <h5><i class="bi bi-scissors me-2 text-secondary"></i>Ferramentas Básicas</h5>
+        <p>Canivete, corda, fita adesiva, saco de lixo resistente.</p>
+      </div>
+    </div>
+
+    <!-- Lista de Verificação -->
+    <div class="alert alert-primary mt-4">
+      <h5><i class="bi bi-check2-square me-2"></i>Lista de Verificação Mensal</h5>
+      <ul class="mb-0">
+        <li>Verificar validade de alimentos e medicamentos</li>
+        <li>Testar lanternas e trocar pilhas se necessário</li>
+        <li>Verificar se documentos estão atualizados</li>
+        <li>Conferir se todos os itens estão no local correto</li>
+      </ul>
+    </div>
+
+  </main>
+
+  <!-- Botão Voltar ao Topo -->
+  <button onclick="topFunction()" id="btnTopo" title="Voltar ao topo" class="btn btn-primary rounded-circle shadow">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
   <!-- Footer -->
   <footer class="bg-light text-center text-muted py-4 border-top mt-auto">
     <div class="container">
       <p class="mb-1">&copy; 2025 Proteja-se das Enchentes</p>
-      <small>Site educativo com dicas de segurança e prevenção contra desastres naturais.</small>
+      <small class="d-block">Site educativo com dicas de segurança e prevenção contra desastres naturais.</small>
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Mostrar o botão quando rolar para baixo
+    window.onscroll = function () {
+      mostrarBotaoTopo();
+    };
+
+    function mostrarBotaoTopo() {
+      const btn = document.getElementById("btnTopo");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    }
+
+    // Rolagem suave até o topo
+    function topFunction() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
 </body>
 </html>
